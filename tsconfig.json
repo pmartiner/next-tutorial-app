@@ -1,19 +1,47 @@
 {
   "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "es5",
+      "es2015",
+      "scripthost",
+      "es2017",
+      "es2016",
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
     "allowJs": true,
+    "noEmit": true,
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "importHelpers": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "pages/*": [
+        "./pages/*"
+      ],
+      "components/*": [
+        "./components/*"
+      ],
+      "styles/*": [
+        "./styles/*"
+      ]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts", "**/*.ts", "**/*.tsx"
+  ],
   "exclude": ["node_modules"]
 }

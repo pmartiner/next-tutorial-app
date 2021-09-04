@@ -2,7 +2,6 @@
 import Image, { ImageProps } from 'next/image';
 
 // Types
-import { NextComponentType } from 'next';
 import { FC } from 'react';
 
 type Props = ImageProps;
