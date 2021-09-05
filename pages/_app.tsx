@@ -6,7 +6,7 @@
 // is that global CSS affects all elements on the page.
 import 'styles/globals.css';
 
-// Tyles
+// Types
 import { AppType } from 'next/dist/shared/lib/utils';
 
 /*
