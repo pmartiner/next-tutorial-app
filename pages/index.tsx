@@ -1,10 +1,10 @@
 // Libraries
 import Link from 'next/link';
 import Head from 'next/head';
-import Image from 'next/image';
 
 // Components
 import Layout, { siteTitle } from 'components/Layout';
+import Date from 'components/Date';
 
 // Styles
 import utilStyles from 'styles/utils.module.css';
@@ -39,12 +39,14 @@ const Home: NextPage<Props> = (props) => {
         <ul className={utilStyles.list}>
           {props.allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              {title}
+              <Link href={`/posts/${id}`}>
+                <a>{title}</a>
+              </Link>
               <br />
-              {id}
-              <br />
-              {date}
-            </li>
+              <small className={utilStyles.lightText}>
+                <Date dateString={date} />
+              </small>
+            </li>          
           ))}
         </ul>
       </section>

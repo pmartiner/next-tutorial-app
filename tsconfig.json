@@ -27,18 +27,7 @@
     "isolatedModules": true,
     "importHelpers": true,
     "jsx": "preserve",
-    "baseUrl": ".",
-    "paths": {
-      "pages/*": [
-        "./pages/*"
-      ],
-      "components/*": [
-        "./components/*"
-      ],
-      "styles/*": [
-        "./styles/*"
-      ]
-    }
+    "baseUrl": "."
   },
   "include": [
     "next-env.d.ts", "**/*.ts", "**/*.tsx"
